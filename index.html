@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brenda Robles Antonio · Software Engineer</title>
+<style>
+:root{--bg:#faf9f6;--fg:#111;--muted:#5d5d5d;--line:#d9d6cf;--card:#fff;--accent:#c2410c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121212;--fg:#f2f0ea;--muted:#a3a09a;--line:#2f2e2b;--card:#1b1b1a;--accent:#fb923c}}
+:root[data-theme="dark"]{--bg:#121212;--fg:#f2f0ea;--muted:#a3a09a;--line:#2f2e2b;--card:#1b1b1a;--accent:#fb923c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.es,.en{display:none}
+html[data-lang="es"] .es,html[data-lang="en"] .en{display:inline}
+html[data-lang="es"] div.es,html[data-lang="en"] div.en,html[data-lang="es"] p.es,html[data-lang="en"] p.en{display:block}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+nav a:hover{color:var(--accent)}
+nav .links{display:flex;flex-wrap:wrap;align-items:center}
+button.lang{margin-left:18px;background:none;border:1px solid var(--line);color:var(--fg);padding:4px 10px;border-radius:999px;font:inherit;cursor:pointer}
+header.hero{padding:72px 0 56px;border-left:3px solid var(--fg);padding-left:28px;margin-top:24px}
+.hero h1{font-weight:300;font-size:clamp(40px,9vw,76px);line-height:1.02;letter-spacing:.08em;text-transform:uppercase;margin:0}
+.role{margin:20px 0 0;font-weight:700;letter-spacing:.35em;text-transform:uppercase;font-size:14px;color:var(--accent)}
+.lead{max-width:620px;margin:24px 0 0;color:var(--muted);font-size:18px}
+.cta{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border:1px solid var(--fg);color:var(--fg);text-decoration:none;font-size:14px;letter-spacing:.06em}
+.btn.primary{background:var(--fg);color:var(--bg)}
+.btn:hover{border-color:var(--accent);background:var(--accent);color:#fff}
+section,header.hero{display:none;min-height:52vh}
+section.on,header.hero.on{display:block;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){section.on,header.hero.on{animation:none}}
+section{padding:48px 0 56px}
+nav a.act{color:var(--accent)}
+.sub{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:600}
+.sub.gap{margin-top:44px}
+h2{font-size:14px;font-weight:800;letter-spacing:.35em;text-transform:uppercase;margin:0 0 32px}
+.job{display:grid;grid-template-columns:170px 1fr;gap:8px 28px;margin-bottom:34px}
+.job .when{color:var(--muted);font-size:14px}
+.job h3{margin:0;font-size:17px}
+.job .co{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.job ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);padding:22px}
+.card h3{margin:0 0 8px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px dashed var(--accent);color:var(--accent);padding:2px 8px;margin-bottom:12px}
+.note{color:var(--muted);font-size:15px;max-width:640px;margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--card);padding:4px 12px;font-size:14px}
+.skill{margin-bottom:22px}
+.skill h3{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px}
+.lang-row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0;max-width:260px}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+a{color:var(--accent)}
+@media(max-width:640px){.job{grid-template-columns:1fr}header.hero{padding-left:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a href="#inicio" style="margin:0;color:var(--fg);font-weight:700">BRA</a>
+  <div class="links">
+    <a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a>
+    <a href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a>
+    <a href="#skills">Stack</a>
+    <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+    <button class="lang" id="lang" aria-label="Cambiar idioma / Switch language">ES</button>
+  </div>
+</nav>
+
+<header class="hero on" id="inicio">
+  <h1>Brenda<br>Robles<br>Antonio</h1>
+  <p class="role">Software Engineer</p>
+  <p class="lead es">Ingeniera de software con experiencia en desarrollo C#/.NET, sistemas basados en SQL, soluciones backend y herramientas de BI como SAP BO e Informatica. Me gusta resolver problemas de forma estructurada y trabajar con metodologías ágiles.</p>
+  <p class="lead en">Software engineer with strong experience in C#/.NET development, SQL-based systems, backend solutions and BI tools such as SAP BO and Informatica. I enjoy structured problem-solving and working with agile methodologies.</p>
+</header>
+
+<section id="experiencia">
+  <h2><span class="es">Experiencia</span><span class="en">Experience</span></h2>
+
+  <div class="job">
+    <div class="when">Jun 2025 – <span class="es">Presente</span><span class="en">Present</span></div>
+    <div>
+      <div class="co">Freelance</div>
+      <h3><span class="es">Desarrolladora de software</span><span class="en">Software Developer</span></h3>
+      <ul class="es"><li>Desarrollo de soluciones de escritorio y backend con C# y .NET.</li><li>Fortalecimiento continuo de habilidades de backend y desarrollo de software.</li><li>Aprendizaje independiente y crecimiento técnico.</li><li>Servicio y atención a cliente, apoyando la comprensión y el uso adecuado de las herramientas.</li></ul>
+      <ul class="en"><li>Built desktop and backend solutions using C# and .NET.</li><li>Continued strengthening backend and software development skills.</li><li>Independent learning and technical growth.</li><li>Customer service and support, helping clients understand and effectively use the tools.</li></ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Jul 2021 – Jun 2025</div>
+    <div>
+      <div class="co">Syntax México</div>
+      <h3><span class="es">Desarrolladora de software</span><span class="en">Software Developer</span></h3>
+      <ul class="es"><li>Desarrollo de soluciones de escritorio y backend con C# y .NET.</li><li>Aplicaciones de escritorio con WPF y sistemas basados en SQL.</li><li>Apoyo en la entrega de proyectos y mejoras a los sistemas.</li><li>Servicio y atención a cliente, apoyando la comprensión y el uso adecuado de las herramientas.</li></ul>
+      <ul class="en"><li>Developed desktop and backend solutions using C# and .NET.</li><li>Built desktop applications with WPF and SQL-based systems.</li><li>Supported project delivery and system improvements.</li><li>Customer service and support, helping clients understand and effectively use the tools.</li></ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Jun 2017 – Jul 2021</div>
+    <div>
+      <div class="co">T-Systems</div>
+      <h3><span class="es">Especialista TI · BI y Data Warehouse</span><span class="en">IT Specialist · BI &amp; Data Warehouse Developer</span></h3>
+      <ul class="es"><li>Reportes de BI y soluciones basadas en SQL.</li><li>Desarrollo y soporte de procesos DWH con SAP BO e Informatica.</li><li>Apoyo en análisis de datos y reportería para sistemas empresariales.</li><li>Servicio y atención a cliente, apoyando la comprensión y el uso adecuado de las herramientas.</li></ul>
+      <ul class="en"><li>Developed BI reports and SQL-based solutions.</li><li>Built and supported DWH processes using SAP BO and Informatica.</li><li>Supported data analysis and reporting for enterprise systems.</li><li>Customer service and support, helping clients understand and effectively use the tools.</li></ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Apr 2026 – <span class="es">Presente</span><span class="en">Present</span></div>
+    <div>
+      <div class="co">It’s English Time!</div>
+      <h3><span class="es">Instructora de inglés (medio tiempo)</span><span class="en">English Instructor (part-time)</span></h3>
+      <ul class="es"><li>Clases personalizadas de inglés, fortaleciendo comunicación y resolución de problemas.</li><li>Servicio y atención a cliente, apoyando la comprensión y el uso adecuado de las herramientas.</li></ul>
+      <ul class="en"><li>Personalized English lessons, strengthening communication and problem-solving.</li><li>Customer service and support, helping clients understand and effectively use the tools.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2><span class="es">Proyectos</span><span class="en">Projects</span></h2>
+  <h3 class="sub"><span class="es">Proyectos profesionales</span><span class="en">Professional projects</span></h3>
+  <p class="note es">Descripciones generales de proyectos en los que he participado, sin datos del cliente ni de la empresa, en cumplimiento de acuerdos de confidencialidad.</p>
+  <p class="note en">General descriptions of projects I have taken part in, omitting client and company details in compliance with confidentiality agreements.</p>
+  <div class="grid">
+    <div class="card"><h3><span class="es">Data Warehouse y BI</span><span class="en">Data Warehouse &amp; BI</span></h3>
+      <p class="es">Participación en un proyecto de análisis de datos en el que se definieron llaves primarias y la trazabilidad de la información, aportando orden y claridad a la toma de decisiones del cliente. Se desarrollaron reportes en SAP BO y se impartió capacitación: a compañeros, en la creación de reportes, y a usuarios finales, en su uso.</p>
+      <p class="en">Participated in a data analysis project where primary keys and end-to-end data lineage were defined, bringing order and clarity to the client’s decision-making. Built reports in SAP BO and delivered training: to teammates on report creation and to end users on report usage.</p></div>
+    <div class="card"><h3><span class="es">Portal interno corporativo</span><span class="en">Internal corporate portal</span></h3>
+      <p class="es">Desarrollo de un sitio web de uso interno para almacenar documentos, información y evaluaciones propias de la empresa, con acceso exclusivo para empleados. Dada la naturaleza sensible de los documentos, se restringió su descarga.</p>
+      <p class="en">Developed an internal website to store company documents, information and assessments, accessible only to employees. Given the sensitive nature of the documents, downloads were restricted.</p></div>
+    <div class="card"><h3><span class="es">Reingeniería de herramienta de soporte</span><span class="en">Support tool re-engineering</span></h3>
+      <p class="es">Colaboración en la reingeniería de una herramienta para el equipo de soporte de servicios SAP, ORACLE y sistemas operativos, con interfaz en WPF y lógica de negocio en C#.</p>
+      <p class="en">Contributed to the re-engineering of a tool used by the support team for SAP, ORACLE and operating system services, with a WPF interface and a C# backend.</p></div>
+  </div>
+  <h3 class="sub gap"><span class="es">Proyectos personales</span><span class="en">Personal projects</span></h3>
+  <p class="note es">Proyectos propios que estoy preparando:</p>
+  <p class="note en">Projects of my own that I’m preparing:</p>
+  <div class="grid">
+    <div class="card"><span class="tag"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+      <h3><span class="es">Sitio web para academia de inglés</span><span class="en">English academy website</span></h3>
+      <p class="es">Sitio para presentar cursos, niveles y contacto de una academia de inglés.</p><p class="en">A website presenting courses, levels and contact for an English academy.</p></div>
+    <div class="card"><span class="tag"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+      <h3><span class="es">Juego móvil</span><span class="en">Mobile game</span></h3>
+      <p class="es">Un juego para dispositivos móviles, de la idea al lanzamiento.</p><p class="en">A mobile game, from idea to launch.</p></div>
+    <div class="card"><span class="tag"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+      <h3><span class="es">App de registro menstrual</span><span class="en">Period tracking app</span></h3>
+      <p class="es">Aplicación para registrar y entender el ciclo menstrual.</p><p class="en">An app to log and better understand the menstrual cycle.</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Stack</h2>
+  <div class="two">
+    <div>
+      <div class="skill"><h3>Backend</h3><div class="chips"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">RESTful APIs</span></div></div>
+      <div class="skill"><h3><span class="es">Escritorio</span><span class="en">Desktop</span></h3><div class="chips"><span class="chip">WPF</span></div></div>
+      <div class="skill"><h3>Frontend</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span></div></div>
+      <div class="skill"><h3><span class="es">Datos</span><span class="en">Data</span></h3><div class="chips"><span class="chip">SQL</span><span class="chip">Informatica</span><span class="chip">SAP BO</span><span class="chip">ETL</span></div></div>
+      <div class="skill"><h3>BI</h3><div class="chips"><span class="chip">Tableau</span><span class="chip">QuickSight</span><span class="chip">SAP BO</span></div></div>
+      <div class="skill"><h3><span class="es">Prácticas</span><span class="en">Practices</span></h3><div class="chips"><span class="chip">Agile</span><span class="chip">SCRUM</span><span class="chip">ITIL</span></div></div>
+    </div>
+    <div>
+      <div class="skill"><h3><span class="es">Idiomas</span><span class="en">Languages</span></h3>
+        <div class="lang-row"><span><span class="es">Inglés</span><span class="en">English</span></span><b>C2</b></div>
+        <div class="lang-row"><span><span class="es">Alemán</span><span class="en">German</span></span><b>A1</b></div>
+        <div class="lang-row"><span><span class="es">Italiano</span><span class="en">Italian</span></span><b>A1</b></div>
+      </div>
+      <div class="skill"><h3><span class="es">Educación</span><span class="en">Education</span></h3>
+        <p style="margin:0"><b>Universidad Popular Autónoma del Estado de Puebla</b><br>
+        <span class="es">Ingeniería de Software, 2017<br>Puntaje sobresaliente en CENEVAL</span><span class="en">Software Engineering, 2017<br>Outstanding CENEVAL score</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
+  <p class="note es">¿Tienes una oportunidad o un proyecto en mente? Escríbeme.</p>
+  <p class="note en">Have an opportunity or a project in mind? Let’s talk.</p>
+  <div class="cta" style="margin-top:0">
+    <a class="btn primary" href="mailto:brendaroblesantonio@gmail.com">brendaroblesantonio@gmail.com</a>
+    <a class="btn" href="https://linkedin.com/in/brendaroblesantonio" target="_blank" rel="noopener">linkedin.com/in/brendaroblesantonio</a>
+  </div>
+</section>
+
+<footer>© 2026 Brenda Robles Antonio</footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('lang');
+  function set(l){root.setAttribute('data-lang',l);root.lang=l;btn.textContent=l==='es'?'EN':'ES';try{localStorage.setItem('lang',l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  if(saved==='en'||saved==='es')set(saved);
+  btn.addEventListener('click',function(){set(root.getAttribute('data-lang')==='es'?'en':'es')});
+  var ids=['inicio','experiencia','proyectos','skills','contacto'];
+  function go(h){
+    ids.forEach(function(i){var e=document.getElementById(i);if(e)e.classList.toggle('on',i===h)});
+    document.querySelectorAll('nav .links a').forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+h)});
+    window.scrollTo(0,0);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=a.getAttribute('href').slice(1);if(ids.indexOf(h)>=0){e.preventDefault();go(h)}})});
+  var h0=(location.hash||'').slice(1);go(ids.indexOf(h0)<0?'inicio':h0);
+})();
+</script>
+</body>
+</html>
